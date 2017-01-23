@@ -1,0 +1,31 @@
+
+"===" tab buffers "==="
+nnoremap <Leader>tl : tabs<cr>
+
+"===" tabmove "==="
+map m :tabmove! +1<cr>
+map M :tabmove! -1<cr>
+
+"===" tab duplicate "==="
+nnoremap <Leader>td :js window.openNewTabWith(buffer.URL)<CR> <C-n> 
+
+"===" tabgroups, panorama "==="
+nnoremap <Leader>pc :<C-u>panorama<Space>
+"*" 移動
+nnoremap <Leader>ps :<C-u>panorama switch<Space>
+"*" 新規作成
+nnoremap <Leader>pa :<C-u>panorama add<Space>
+"*" リスト表示
+nnoremap <Leader>pl :<C-u>panorama list<CR>
+"*" 
+nnoremap <Leader>pp :<C-u>panorama pushtab<Space>
+nnoremap <Leader>pu :<C-u>panorama pulltab<Space>
+"*" 削除
+nnoremap <Leader>pr :<C-u>panorama remove<Space>
+"*" ビュー
+nnoremap <Leader>pv <C-S-e>
+
+"===" open private window "==="
+nnoremap <Leader>wp :<C-u>winopen -private<Space>
+
+

@@ -1,0 +1,8 @@
+"===" page search "==="
+noremap <Leader>noh :noh<cr><Esc><Esc>
+
+"===" google search "==="
+noremap s :tabopen<Space>google<Space>
+noremap S :open<Space>google<Space>
+vmap <silent> <C-g> y<Esc><Esc>P
+

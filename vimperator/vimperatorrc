@@ -1,0 +1,35 @@
+"============================
+" General
+"============================
+"*" title setting
+set titlestring=Firefox
+
+"*" 入力欄に自動フォーカスしない
+set focuscontent
+style! -name=commandline-ime chrome://* #liberator-commandline-command input {ime-mode: inactive;}
+
+"*" j,k scroll, h,l currenttabmove
+map j 5<C-e>
+map k 5<C-y>
+map J <C-d>
+map K <C-u>
+map h <C-p>
+map l <C-n>
+noremap H 3h
+noremap L 3l
+
+"*" general mapping 
+let mapleader = ","
+
+"============================
+" Plugin load
+"============================
+" slack esc
+"source ./.vimperator/slack_esc/slack_esc.vimperatorrc
+
+source ~/.vimperator/mysetting/search.vimprc
+source ~/.vimperator/mysetting/tab_panorama.vimprc
+
+"===== finish loading ====="
+noremap <Leader>rc : source ~/.vimperatorrc<cr>
+echo ".vimperatorrc is loaded"
